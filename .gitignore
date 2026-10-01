@@ -1,0 +1,8 @@
+# hello this files are ignored make sure to put or remove the things that you want 
+
+
+# Ignore the .vscode folder
+.vscode/
+
+# Ignore all .exe files 
+*.exe
