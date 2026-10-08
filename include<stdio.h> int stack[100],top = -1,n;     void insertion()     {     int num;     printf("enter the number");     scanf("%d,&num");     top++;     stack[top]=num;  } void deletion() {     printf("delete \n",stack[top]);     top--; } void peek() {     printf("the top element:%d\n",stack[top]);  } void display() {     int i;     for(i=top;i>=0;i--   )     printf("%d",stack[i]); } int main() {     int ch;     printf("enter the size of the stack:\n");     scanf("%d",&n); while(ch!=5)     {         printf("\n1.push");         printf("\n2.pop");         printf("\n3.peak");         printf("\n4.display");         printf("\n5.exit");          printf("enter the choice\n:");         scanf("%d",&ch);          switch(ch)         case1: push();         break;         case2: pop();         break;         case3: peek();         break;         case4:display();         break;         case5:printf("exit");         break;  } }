@@ -1,0 +1,57 @@
+include<stdio.h>
+int stack[100],top = -1,n;
+    void insertion()
+    {
+    int num;
+    printf("enter the number");
+    scanf("%d,&num");
+    top++;
+    stack[top]=num;
+
+}
+void deletion()
+{
+    printf("delete \n",stack[top]);
+    top--;
+}
+void peek()
+{
+    printf("the top element:%d\n",stack[top]);
+
+}
+void display()
+{
+    int i;
+    for(i=top;i>=0;i--   )
+    printf("%d",stack[i]);
+}
+int main()
+{
+    int ch;
+    printf("enter the size of the stack:\n");
+    scanf("%d",&n);
+while(ch!=5)
+    {
+        printf("\n1.push");
+        printf("\n2.pop");
+        printf("\n3.peak");
+        printf("\n4.display");
+        printf("\n5.exit");
+
+        printf("enter the choice\n:");
+        scanf("%d",&ch);
+
+        switch(ch)
+        case1: push();
+        break;
+        case2: pop();
+        break;
+        case3: peek();
+        break;
+        case4:display();
+        break;
+        case5:printf("exit");
+        break;
+
+}
+}
